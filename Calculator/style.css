@@ -1,0 +1,62 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Calculator styling */
+.calculator {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Display styling */
+.display {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+/* Buttons container styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* Button styling */
+.btn {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+/* Special button styling */
+.zero {
+    grid-column: span 2;
+}
+
+button[rowspan] {
+    grid-row: span 2;
+}
